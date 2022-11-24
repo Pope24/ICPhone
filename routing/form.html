@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin-top: 100px;" class="toast">
+      <div class="toast-header bg-success">
+        <strong class="me-auto text-white">Success !!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>You added success new product.</p>
+      </div>
+    </div>
+  </div>
+    <a class="list-product-to-handle" onclick="handleRUDProduct()"
+      >Danh mục sản phẩm</a
+    >
+    <form id="add-product">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Tên điện thoại (name phone)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="namePhone"
+          placeholder="Example: Iphone 14 Pro..."
+        />
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Giá (price)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="pricePhone"
+          placeholder="Example: 33.690.000"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Ảnh (avatar link)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="avatarPhone"
+          placeholder="Example: https://cdn.tgdd.vn/Products/iphone-14-pro-max-bac-thumb-600x600.jpg"
+        />
+      </div>
+      <br />
+      <button
+        type="submit"
+        onclick="handleAddProduct()"
+        class="btn btn-primary"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+  <script>
+    $("#add-product").submit(function (e) {
+      e.preventDefault();
+    });
+  </script>
+</html>

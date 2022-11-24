@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold"
+          href="#"
+          onclick="location.reload(true);"
+          style="color: #fff"
+          >ICPhone</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                onclick="location.reload(true);"
+                style="color: #fff"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: #fff"
+              >
+                Danh mục
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Điện thoại</a></li>
+                <li><a class="dropdown-item" href="#">Máy tính</a></li>
+                <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    id="handle-droduct"
+                    class="dropdown-item"
+                    onclick="handleListProduct()"
+                  >
+                    Đăng hàng</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                style="color: #fff; filter: brightness(50%)"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn"
+              type="submit"
+              style="background: #fff; filter: brightness(80%)"
+            >
+              Search
+            </button>
+  
+              <button
+                type="button"
+                id="btn__logout"
+                class="btn"
+                onclick="handleLogInUser()"
+              >
+              <i class="fa-solid fa-right-to-bracket"></i> 
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

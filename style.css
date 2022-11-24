@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.show {
+    display: block;
+}
+.navbar.navbar-expand-lg.bg-warning {
+    background-color: #4c4e5b !important;
+    color: #FFF !important;
+}
+#navbarSupportedContent {
+    color: #FFF !important;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+main #background-home {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main #background-home img {
+    object-fit: fill;
+    height: 450px;
+    width: 100%;
+}
+main .category-product {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-product ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.category-product li {
+    overflow: hidden;
+    margin: 20px 30px;
+}
+#handle-droduct:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* FORM */
+main #add-product {
+    margin: 200px 50px 100px 50px;
+}
+
+main .list-product-to-handle {
+    position: absolute;
+    top: 100px;
+    right: 52px;
+}
+main .list-product-to-handle:hover {
+    cursor: pointer;
+    color: #000;
+}
+ul.list-product {
+    margin: 0 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.list-product li {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.list-product li .card {
+    transition: all 500ms ease;
+    background-color: #fff;
+
+}
+.list-product li .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: brightness(90%);
+
+}
+/* Table list product to handle */
+.list-table {
+    margin-top: 100px;
+    text-align: center;
+}
+.list-table .updateBtn {
+    padding: 3px 20px;
+    border-radius: 3px;
+    background: #ff8c0f;
+    color: #FFF;
+}
+.list-table .deleteBtn {
+    margin-left: 20px;
+    padding: 3px 20px;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+}
+.nav-link {
+    transition: all 500ms ease;
+}
+.nav-link:hover {
+    color: #000 !important;
+    transform: scale(1.2);
+}
+.was-validated {
+    margin-top: 100px;
+}
